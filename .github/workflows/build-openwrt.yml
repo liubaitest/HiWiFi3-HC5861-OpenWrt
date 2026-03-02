@@ -19,6 +19,10 @@ on:
         required: false
         default: 'false'
 
+permissions:
+  contents: write
+  actions: write
+  
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
@@ -35,7 +39,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
