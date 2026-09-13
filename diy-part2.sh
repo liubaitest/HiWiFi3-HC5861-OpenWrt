@@ -40,9 +40,9 @@ CONFIG_PACKAGE_kmod-fs-vfat=y
 EOF
 
 #启用软件
+# 如果要openclash，则加入CONFIG_PACKAGE_luci-app-openclash=y
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-argon-config=y
-CONFIG_PACKAGE_luci-app-openclash=y
 EOF
 
 #启用主题
